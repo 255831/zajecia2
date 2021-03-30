@@ -1,0 +1,21 @@
+package pl.Plasun.zajecia2;
+import java.util.Scanner;
+public class zad3_4 {
+    public static void main(String[] args) {
+       int n;
+       System.out.println("podaj liczbę wierszy");
+       Scanner scanner = new Scanner(System.in);
+       n = scanner.nextInt();
+       int i = 0;
+       String wzór = "";
+       do {
+           wzór += '*';
+           System.out.println(wzór);
+           i++;
+           //wzór += "*";
+       }
+       while (i < n );
+        System.out.println("\n");
+
+    }
+}

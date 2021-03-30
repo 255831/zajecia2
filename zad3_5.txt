@@ -1,0 +1,15 @@
+package pl.Plasun.zajecia2;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class zad3_5 {
+    public static void main(String[] args) {
+       String słowo = "politechnika";
+
+       int k = słowo.length();
+       int d = (k-1)/2;
+       String słowo2 = "";
+       int i = 0;
+       słowo2 += słowo.substring(i,d+1);
+       System.out.println(słowo2);
+    }
+}

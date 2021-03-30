@@ -1,0 +1,24 @@
+package pl.Plasun.zajecia2;
+import java.util.Scanner;
+public class zad3_6 {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        int tablica1[] = new int[3];
+        System.out.println("uzupełnij tablicę");
+        tablica1[0] = scanner.nextInt();
+        tablica1[1] = scanner.nextInt();
+        tablica1[2]= scanner.nextInt();
+        int tablica2[] = new int[3];
+        tablica2[0] = tablica1[2];
+        tablica2[1] = tablica1[1];
+        tablica2[2] = tablica1[0];
+        System.out.println("końcowa tablica");
+        System.out.print(tablica2[0]);
+        System.out.print(tablica2[1]);
+        System.out.print(tablica2[2]);
+
+
+
+
+    }
+}

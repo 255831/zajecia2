@@ -1,0 +1,42 @@
+package pl.Plasun.zajecia2;
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Scanner;
+public class zad3_2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Integer> list1 = new ArrayList<Integer>();
+        String polecenie = "";
+        boolean odp = true;
+        do {
+            System.out.println("podaj liczbe");
+            list1.add(scanner.nextInt());
+            System.out.println("czy chcesz kontynuować?(t/n)");
+            polecenie = scanner.next();
+        }
+        while (polecenie.equals("t"));
+        int n = list1.size();
+        for (int i = 0;i < n-1; i++ )
+        {
+            if(n < 3)
+            {
+                System.out.println("\nnie spełnia wymagań");
+            }
+            else {
+                if (list1.get(i) == 1 && list1.get(i + 1) == 2) {
+                    if (list1.get(i + 2) == 3) {
+                        System.out.println("\npojawiła się sekwencja");
+                        break;
+                    } else {
+                        System.out.println("\nnie spełnia wymagań");
+                        break;
+                    }
+                } else {
+                    System.out.println("\nnie spełnia wymagań");
+                    break;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,44 @@
+package pl.Plasun.zajecia2;
+import java.util.Scanner;
+
+class Pracownik{
+    String imie, nazwisko, wiek;
+    public String podaj(String a){
+        Scanner scanner = new Scanner(System.in);
+        a = scanner.next();
+       return a;
+    }
+    public void wysświetl(String b){
+        System.out.println("podaj" + " " + b + " " + "pracownika" );
+    }
+}
+public class zad3_7
+{  public static void main(String[] args) {
+    //Firma
+   Pracownik pierwszy = new Pracownik();
+   pierwszy.wysświetl("imię");
+   pierwszy.imie = pierwszy.podaj(pierwszy.imie);
+   pierwszy.wysświetl("nazwisko");
+   pierwszy.nazwisko = pierwszy.podaj(pierwszy.nazwisko);
+   pierwszy.wysświetl("wiek");
+   pierwszy.wiek = pierwszy.podaj(pierwszy.wiek);
+
+    Pracownik drugi = new Pracownik();
+    drugi.wysświetl("imię");
+    drugi.imie = pierwszy.podaj(drugi.imie);
+    drugi.wysświetl("nazwisko");
+    drugi.nazwisko = pierwszy.podaj(drugi.nazwisko);
+    drugi.wysświetl("wiek");
+    drugi.wiek = pierwszy.podaj(drugi.wiek);
+
+    System.out.println("pierwszy pracownik to ");
+    System.out.println(pierwszy.imie + " " + pierwszy.nazwisko + " " + pierwszy.wiek);
+
+
+    System.out.println("drugi pracownik to ");
+    System.out.println(drugi.imie + " " + drugi.nazwisko + " " +drugi.wiek);
+
+
+    }
+}
+
